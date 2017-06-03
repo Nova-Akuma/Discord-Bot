@@ -3,16 +3,17 @@ const Discord = require("discord.js");
 const ytdl = require('ytdl-core');
 const YouTube = require('simple-youtube-api');
 const youtube = new YouTube('AIzaSyAzd4dLmH90g8UXNa9a_qFtAm4CjStMK8Q');
+const settings = require("./settings.json");
 const PREFIX = "-";
 const request = require("request");
 const readline = require("readline");
 const gm = require("gm");
 const ms = require("ms");
-const settings = require("./settings.json");
 const streamOptions = { seek: 0, volume: 1 }; //yes
 const Streams = {};
 const Playlists = {};
 const queue = require("queue");
+const prefix = "-"
 
 
 let rl = readline.createInterface({
@@ -116,7 +117,7 @@ bot.on("ready", () => {
     console.log("Ready");
 });
 
-bot.login(settings.token)
+bot.login(process.env.BOT_TOKEN)
 
 bot.on("guildMemberAdd", (member) => {
   member.guild.createChannel(member.user.username, 'text').then(function (channel) {
