@@ -4,6 +4,10 @@
   "description": "watchu want some dick?",
   "main": "bot.js",
   "scripts": {
+<<<<<<< HEAD
+=======
+    "test": "echo \"Error: no test specified\" && exit 1",
+>>>>>>> master
     "start": "node bot.js"
   },
   "author": "Akuma",

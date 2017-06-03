@@ -3,7 +3,10 @@ const Discord = require("discord.js");
 const ytdl = require('ytdl-core');
 const YouTube = require('simple-youtube-api');
 const youtube = new YouTube('AIzaSyAzd4dLmH90g8UXNa9a_qFtAm4CjStMK8Q');
+<<<<<<< HEAD
 const settings = require("./settings.json");
+=======
+>>>>>>> master
 const PREFIX = "-";
 const request = require("request");
 const readline = require("readline");
@@ -13,7 +16,10 @@ const streamOptions = { seek: 0, volume: 1 }; //yes
 const Streams = {};
 const Playlists = {};
 const queue = require("queue");
+<<<<<<< HEAD
 const prefix = "-"
+=======
+>>>>>>> master
 
 
 let rl = readline.createInterface({
